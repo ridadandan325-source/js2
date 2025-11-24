@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 4 - multiplication2</title>
+</head>
+<body>
+  <h1>Question 4: multiplication2</h1>
+  <p>Open the browser console to see the results.</p>
+  <script>
+    function multiplication2(a, b) {
+      let result = 0;
+      const positiveA = Math.abs(a);
+      const positiveB = Math.abs(b);
+
+      for (let i = 0; i < positiveB; i++) {
+        result += positiveA;
+      }
+
+      return (a < 0) ^ (b < 0) ? -result : result;
+    }
+
+    console.log("multiplication2(5, 4) =", multiplication2(5, 4));
+    console.log("multiplication2(2, 8) =", multiplication2(2, 8));
+    console.log("multiplication2(7, 6) =", multiplication2(7, 6));
+  </script>
+</body>
+</html>
+

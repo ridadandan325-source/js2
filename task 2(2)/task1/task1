@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 1 - Birth Month</title>
+</head>
+<body>
+  <h1>Question 1: Birth Month Lookup</h1>
+  <p>Open the browser console to see the output.</p>
+  <script>
+    const input = prompt("Enter your birth month (1-12):");
+    const monthNumber = parseInt(input, 10);
+    let monthName;
+
+    switch (monthNumber) {
+      case 1: monthName = "January"; break;
+      case 2: monthName = "February"; break;
+      case 3: monthName = "March"; break;
+      case 4: monthName = "April"; break;
+      case 5: monthName = "May"; break;
+      case 6: monthName = "June"; break;
+      case 7: monthName = "July"; break;
+      case 8: monthName = "August"; break;
+      case 9: monthName = "September"; break;
+      case 10: monthName = "October"; break;
+      case 11: monthName = "November"; break;
+      case 12: monthName = "December"; break;
+      default: monthName = "Invalid month";
+    }
+
+    console.log("Your month is:", monthName);
+  </script>
+</body>
+</html>
+

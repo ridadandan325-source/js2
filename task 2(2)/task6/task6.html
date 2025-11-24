@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question 6 - Pandigital</title>
+</head>
+<body>
+  <h1>Question 6: Pandigital Check</h1>
+  <p>Open the browser console to see the results.</p>
+  <script>
+    function isPandigital(num) {
+      const digits = new Set(num.toString());
+      for (let d = 0; d <= 9; d++) {
+        if (!digits.has(d.toString())) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    console.log("isPandigital(98140723568910) =", isPandigital(98140723568910));
+    console.log("isPandigital(90864523148909) =", isPandigital(90864523148909));
+  </script>
+</body>
+</html>
+
